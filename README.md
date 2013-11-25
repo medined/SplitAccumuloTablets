@@ -24,7 +24,11 @@ tool.sh \
   -t tableA
 ```
 
-8. hadoop fs -ls ./suggest_split_points
+Now you can see the suggestions with this command:
+
+```
+hadoop fs -ls ./suggest_split_points
+```
 
 The split point suggestions are in any file with non-zero length. It's fairly easy to
 read the set of part-m-XXXX file to build a SortSet which can be passed to
